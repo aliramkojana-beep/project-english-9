@@ -14,6 +14,9 @@ const app = express();
 const port = process.env.PORT ? parseInt(process.env.PORT) : 3000;
 
 app.use(express.json({ limit: '10mb' }));
+  app.get('/health', (_req: Request, res: Response) => {
+  res.status(200).send('OK');
+});
 
 // Initialize GoogleGenAI SDK
 const apiKey = process.env.GEMINI_API_KEY || '';
