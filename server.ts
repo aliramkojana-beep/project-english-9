@@ -181,7 +181,11 @@ Answer the student warmly in fluent Persian and simple English examples. If they
 
 // Dev vs Prod Vite setup
 async function startServer() {
- if (process.env.NODE_ENV !== 'production' && process.env.RENDER !== 'true') {
+const isProduction =
+  process.env.NODE_ENV === 'production' ||
+  process.env.RENDER === 'true';
+
+if (!isProduction) {
     const { createServer: createViteServer } = await import('vite');
     const vite = await createViteServer({
       server: { middlewareMode: true },
