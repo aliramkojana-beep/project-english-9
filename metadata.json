@@ -1,0 +1,7 @@
+{
+  "name": "Prospect 3 - Grade 9 English (Personality)",
+  "description": "آموزش تعاملی درس اول زبان انگلیسی پایه نهم (شخصیت - Personality) همراه با واژگان، مکالمه احسان و پرهام، گرامر، آزمون و تولید ویدیوی آموزشی با مدل Veo 3",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
